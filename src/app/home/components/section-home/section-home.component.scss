@@ -1,6 +1,28 @@
 .hero-box {
   border: 1px solid;
-  border-color: var(--blue-200);
+  border-color: var(--blue-100);
   border-radius: 5%;
   background-color: white;
+
+  * {
+    background-color: white;
+  }
+
+  .pi {
+    font-size: 2rem;
+    color: var(--blue-500);
+  }
+
+  .name {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.8rem;
+
+    span {
+      color: var(--surface-600);
+      font-weight: 500;
+    }
+  }
 }

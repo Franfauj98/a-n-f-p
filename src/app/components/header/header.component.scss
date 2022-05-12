@@ -4,7 +4,11 @@ header {
   justify-content: center;
   height: 50px;
 
-  button {
-    border: none;
+  a {
+    align-self: center;
+
+    button {
+      border: none;
+    }
   }
 }

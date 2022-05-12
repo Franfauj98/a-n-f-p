@@ -6,6 +6,7 @@ import {ConnectedModule} from "../connected.module";
 import {SectionHomeComponent} from './components/section-home/section-home.component';
 import {ButtonModule} from "primeng/button";
 import {RippleModule} from "primeng/ripple";
+import {DividerModule} from "primeng/divider";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {RippleModule} from "primeng/ripple";
     AppHomeRoutingModule,
     ConnectedModule,
     ButtonModule,
-    RippleModule
+    RippleModule,
+    DividerModule
   ],
   bootstrap: [AppHomeComponent]
 })
