@@ -3,12 +3,16 @@ header {
   flex-direction: row;
   justify-content: center;
   height: 50px;
+  background-color: var(--indigo-700);
+  box-shadow: 0 2px 2px var(--indigo-700);
 
   a {
     align-self: center;
 
     button {
+      color: white;
       border: none;
+      background-color: var(--indigo-700);
     }
   }
 }
