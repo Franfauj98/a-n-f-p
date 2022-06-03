@@ -1,14 +1,6 @@
 <header>
-  <a href="/home">
-    <button>Nos formations</button>
-  </a>
-  <a href="/planning">
-    <button class="ml-5">Planning</button>
-  </a>
-  <a href="/planning">
-    <button class="ml-5">Nos certifications</button>
-  </a>
-  <a href="/planning">
-    <button class="ml-5">Nous sommes</button>
+  <a (click)="selectOption(head.path)" *ngFor="let head of headerOptions" [href]="head.path"
+     [ngClass]="{'selected': head.selected}" class="ml-1 mr-1">
+    <button class="pr-3 pl-3">{{head.title}}</button>
   </a>
 </header>

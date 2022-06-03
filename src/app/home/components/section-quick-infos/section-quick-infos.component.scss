@@ -1,0 +1,25 @@
+div {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+:host::ng-deep {
+  article {
+    margin: auto;
+    width: 80%;
+  }
+
+  h2 {
+    margin: 20px auto;
+    font-size: 1.3rem;
+  }
+
+  p {
+    margin: auto;
+    align-content: center;
+    width: 80%;
+    font-size: 0.9rem;
+    color: var(--gray-500);
+  }
+}

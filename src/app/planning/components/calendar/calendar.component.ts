@@ -23,7 +23,8 @@ export class CalendarComponent implements OnInit {
     selectMirror: true,
     dayMaxEvents: true,
     events: [
-      {title: 'Formation Amiante SS4', start: '2022-05-02', end: '2022-05-07'}
+      {title: 'Formation Amiante SS4', start: '2022-06-06', end: '2022-06-10'},
+      {title: 'Formation Littérature', start: '2022-06-21', end: '2022-06-25'}
     ]
   };
 

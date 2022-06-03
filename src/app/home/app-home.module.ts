@@ -7,12 +7,14 @@ import {SectionHomeComponent} from './components/section-home/section-home.compo
 import {ButtonModule} from "primeng/button";
 import {RippleModule} from "primeng/ripple";
 import {DividerModule} from "primeng/divider";
+import {SectionQuickInfosComponent} from "./components/section-quick-infos/section-quick-infos.component";
 
 @NgModule({
   declarations: [
     AppHomeComponent,
     HomeContainerComponent,
     SectionHomeComponent,
+    SectionQuickInfosComponent,
   ],
   imports: [
     AppHomeRoutingModule,
