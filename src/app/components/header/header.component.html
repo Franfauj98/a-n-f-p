@@ -1,6 +1,24 @@
-<header>
-  <a (click)="selectOption(head.path)" *ngFor="let head of headerOptions" [href]="head.path"
-     [ngClass]="{'selected': head.selected}" class="ml-1 mr-1">
-    <button class="pr-3 pl-3">{{head.title}}</button>
-  </a>
+<header [ngClass]="{'header-mobile': userAgentMobile}">
+  <ng-container *ngIf="!userAgentMobile">
+    <a (click)="selectOption(head.path)" *ngFor="let head of headerOptions" [href]="head.path"
+       [ngClass]="{'selected': head.selected}" class="ml-1 mr-1">
+      <button class="pr-3 pl-3">{{head.title}}</button>
+    </a>
+  </ng-container>
+  <ng-container *ngIf="userAgentMobile">
+    <div (click)="openMenuMobile()" class="header-options-mobile">
+      <button aria-label="bouton de menu" class="button-option-bars">
+        <i class="pi pi-bars"></i>
+      </button>
+      <div>ANFR</div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="userAgentMobile && menuMobileOpened">
+    <div class="header-options-popin">
+      <a (click)="selectOption(head.path)" *ngFor="let head of headerOptions" [href]="head.path"
+         [ngClass]="{'selected': head.selected}" class="ml-1 mr-1">
+        <button class="pr-3 pl-3">{{head.title}}</button>
+      </a>
+    </div>
+  </ng-container>
 </header>

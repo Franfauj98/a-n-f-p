@@ -42,4 +42,47 @@ header {
       }
     }
   }
+
+  &.header-mobile {
+
+    .header-options-mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 20px;
+      width: 100%;
+      z-index: 1;
+
+      button {
+        border: none;
+        background: white;
+        vertical-align: middle;
+        height: 100%;
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+
+      div {
+        vertical-align: middle;
+        margin-right: 20px;
+        align-self: center;
+      }
+    }
+
+    .header-options-popin {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background: white;
+    }
+
+  }
 }

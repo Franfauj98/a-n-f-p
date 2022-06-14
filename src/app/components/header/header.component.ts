@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HeaderOption} from "../../model/HeaderOption";
+import {BrowserUtils} from "../../utils/BrowserUtils";
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,8 @@ import {HeaderOption} from "../../model/HeaderOption";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  userAgentMobile: boolean = false;
+  menuMobileOpened: boolean = false;
   headerOptions = [
     new HeaderOption('Accueil', '/home', false),
     new HeaderOption('Qui sommes nous', '/qui', false),
@@ -20,6 +22,7 @@ export class HeaderComponent implements OnInit {
   ]
 
   constructor() {
+    this.userAgentMobile = BrowserUtils.isMobileDevice();
     const optionSelected = this.headerOptions.find(o => document.URL.endsWith(o.path));
     if (optionSelected) {
       this.selectOption(optionSelected.path);
@@ -37,6 +40,10 @@ export class HeaderComponent implements OnInit {
       this.headerOptions.map(elt => elt.selected = false);
       this.headerOptions[index].selected = true;
     }
+  }
+
+  openMenuMobile() {
+    this.menuMobileOpened = !this.menuMobileOpened;
   }
 
 }
