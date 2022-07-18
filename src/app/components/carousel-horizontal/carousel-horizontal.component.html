@@ -1,5 +1,6 @@
-<p-galleria [value]="data">
+<p-carousel [value]="data">
   <ng-template let-item pTemplate="item">
-    <img [alt]="item.alt" [src]="item.previewImageSrc"/>
+    <img *ngIf="!userAgentMobile" [alt]="item.alt" [src]="item.previewImageSrc"/>
+    <img *ngIf="userAgentMobile" [alt]="item.alt" [src]="item.previewImageSrcMobile"/>
   </ng-template>
-</p-galleria>
+</p-carousel>

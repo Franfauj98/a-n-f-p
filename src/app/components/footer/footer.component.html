@@ -1,0 +1,24 @@
+<footer>
+  <ng-container *ngIf="!userAgentMobile">
+    <div class="footer-desktop">
+      <h6>Agence Nationale de Formations Rapides</h6>
+      <div class="d-flex flex-row">
+        <div>Mentions légales</div>
+        <div>&nbsp; - &nbsp;</div>
+        <div>Confidentialité</div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="userAgentMobile">
+    <div class="footer-mobile">
+      <div class="d-flex flex-column">
+        <div class="mb-2">Agence Nationale</div>
+        <div>de Formations Rapides</div>
+      </div>
+      <div class="d-flex flex-column">
+        <div class="mb-2">Mentions légales</div>
+        <div>Confidentialité</div>
+      </div>
+    </div>
+  </ng-container>
+</footer>

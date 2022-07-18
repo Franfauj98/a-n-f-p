@@ -6,6 +6,7 @@ import {TranslateModule} from '@ngx-translate/core';
 import {SectionTextIconComponent} from './components/section-text-icon/section-text-icon.component';
 import {CarouselHorizontalComponent} from './components/carousel-horizontal/carousel-horizontal.component';
 import {GalleriaModule} from "primeng/galleria";
+import {CarouselModule} from "primeng/carousel";
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import {GalleriaModule} from "primeng/galleria";
     ServiceWorkerModule,
     RouterModule,
     GalleriaModule,
+    CarouselModule,
   ],
   declarations: [
     SectionTextIconComponent,
@@ -25,7 +27,8 @@ import {GalleriaModule} from "primeng/galleria";
     CommonModule,
     ServiceWorkerModule,
     RouterModule,
-    SectionTextIconComponent
+    SectionTextIconComponent,
+    CarouselHorizontalComponent
   ]
 })
 export class ConnectedModule {

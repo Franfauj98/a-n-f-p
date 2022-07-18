@@ -2,6 +2,7 @@ div {
   margin: auto;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
   &.quick-info-mobile {
     flex-direction: column;
@@ -12,7 +13,7 @@ div {
 :host::ng-deep {
   article {
     margin: auto;
-    width: 80%;
+    width: 400px;
   }
 
   h2 {
