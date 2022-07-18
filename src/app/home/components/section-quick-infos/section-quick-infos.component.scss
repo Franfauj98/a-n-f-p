@@ -2,6 +2,11 @@ div {
   margin: auto;
   display: flex;
   flex-direction: row;
+
+  &.quick-info-mobile {
+    flex-direction: column;
+    zoom: 0.9;
+  }
 }
 
 :host::ng-deep {

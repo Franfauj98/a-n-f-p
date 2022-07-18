@@ -1,3 +1,13 @@
+.surface-section-mobile {
+  zoom: 0.75;
+
+  .card-mobile {
+    .row {
+      justify-content: center;
+    }
+  }
+}
+
 a {
   all: unset;
   display: contents;
