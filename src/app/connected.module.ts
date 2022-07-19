@@ -7,6 +7,8 @@ import {SectionTextIconComponent} from './components/section-text-icon/section-t
 import {CarouselHorizontalComponent} from './components/carousel-horizontal/carousel-horizontal.component';
 import {GalleriaModule} from "primeng/galleria";
 import {CarouselModule} from "primeng/carousel";
+import {SectionTextComponent} from "./components/section-text/section-text.component";
+import {TagModule} from "primeng/tag";
 
 @NgModule({
   imports: [
@@ -16,10 +18,12 @@ import {CarouselModule} from "primeng/carousel";
     RouterModule,
     GalleriaModule,
     CarouselModule,
+    TagModule,
   ],
   declarations: [
     SectionTextIconComponent,
-    CarouselHorizontalComponent
+    CarouselHorizontalComponent,
+    SectionTextComponent
   ],
   providers: [],
   exports: [
@@ -28,7 +32,8 @@ import {CarouselModule} from "primeng/carousel";
     ServiceWorkerModule,
     RouterModule,
     SectionTextIconComponent,
-    CarouselHorizontalComponent
+    CarouselHorizontalComponent,
+    SectionTextComponent
   ]
 })
 export class ConnectedModule {
