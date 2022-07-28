@@ -14,6 +14,9 @@ const routes: Routes = [{
   path: 'formations',
   loadChildren: () => import('src/app/formations/formation.module').then(m => m.FormationModule)
 }, {
+  path: 'missions',
+  loadChildren: () => import('src/app/missions/missions.module').then(m => m.MissionsModule)
+}, {
   path: '**',
   loadChildren: () => import('src/app/home/app-home.module').then(m => m.AppHomeModule)
 }];
