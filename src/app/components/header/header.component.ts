@@ -42,7 +42,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  openMenuMobile() {
+  openMenuMobile(): void {
     this.menuMobileOpened = !this.menuMobileOpened;
   }
 
