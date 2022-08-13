@@ -1,0 +1,14 @@
+:host ::ng-deep {
+  .p-card {
+    height: 650px;
+  }
+  .p-button.p-button-secondary, .p-buttonset.p-button-secondary > .p-button, .p-splitbutton.p-button-secondary > .p-button {
+    background-color: var(--orange-500);
+    border-color: var(--orange-500);
+
+    &:hover, &:active, &:focus, &:visited, &:focus-within, &:focus-visible {
+      background-color: var(--orange-300);
+      border-color: var(--orange-300);
+    }
+  }
+}

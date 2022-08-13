@@ -1,3 +1,23 @@
 .section-calendar {
   background-color: white;
 }
+
+.grid-container {
+  margin: 10px 130px;
+  border: 2px solid var(--orange-100);
+  padding: 60px 0;
+  border-radius: 5px;
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 95%;
+    margin: auto;
+
+    .grid-item {
+      margin: auto;
+    }
+  }
+}

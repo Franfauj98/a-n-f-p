@@ -1,4 +1,19 @@
 :host ::ng-deep {
+
+  .p-carousel {
+
+    .p-carousel-content {
+      .p-carousel-container {
+        .p-carousel-item {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
   .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
     background-color: var(--orange-500);
 

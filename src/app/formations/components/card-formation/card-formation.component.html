@@ -1,0 +1,9 @@
+<p-card header="{{headerText}}" subheader="{{subHeaderText}}" [style]="{width: '360px'}" styleClass="p-card-shadow">
+  <ng-template pTemplate="header">
+    <img alt="Card" src="{{imagePath}}">
+  </ng-template>
+  <p>{{contentText}}</p>
+  <ng-template pTemplate="footer">
+    <p-button label="Plus d'informations" icon="pi pi-check" styleClass="p-button-secondary"></p-button>
+  </ng-template>
+</p-card>
